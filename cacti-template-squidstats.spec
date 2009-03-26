@@ -2,7 +2,7 @@
 Summary:	Plugin for Cacti - Squid Statistics
 Name:		cacti-plugin-%{plugin}
 Version:	0.1
-Release:	0.1
+Release:	0.2
 License:	GPL v2
 Group:		Applications/WWW
 Source0:	SquidStats-%{version}.zip
@@ -34,9 +34,7 @@ cp -a webcache_squid_core.xml webcache_squid_median.xml $RPM_BUILD_ROOT%{snmpque
 cp -a cacti_host_template_webcache_squid_server_snmp.xml $RPM_BUILD_ROOT%{resourcedir}
 
 %post
-%{_sbindir}/cacti-add_template \
-	%{snmpqueriesdir}/webcache_squid_core.xml \
-	%{snmpqueriesdir}/webcache_squid_median.xml
+%{_sbindir}/cacti-add_template %{resourcedir}/cacti_host_template_webcache_squid_server_snmp.xml
 
 %clean
 rm -rf $RPM_BUILD_ROOT
