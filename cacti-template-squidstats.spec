@@ -1,8 +1,8 @@
-%define		plugin squidstats
-Summary:	Plugin for Cacti - Squid Statistics
-Name:		cacti-plugin-%{plugin}
+%define		template	squidstats
+Summary:	Squid Statistics template for Cacti
+Name:		cacti-template-%{template}
 Version:	0.1
-Release:	0.2
+Release:	1
 License:	GPL v2
 Group:		Applications/WWW
 Source0:	SquidStats-%{version}.zip
@@ -11,6 +11,7 @@ URL:		http://forums.cacti.net/about3158.html
 BuildRequires:	sed >= 4.0
 Requires:	cacti >= 0.8.6j
 Requires:	cacti-add_template
+Obsoletes:	cacti-plugin-squidstats
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
