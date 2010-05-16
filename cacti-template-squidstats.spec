@@ -9,6 +9,7 @@ Source0:	SquidStats-%{version}.zip
 # Source0-md5:	a37de602c6e5495049a368d0d2c87549
 URL:		http://forums.cacti.net/about3158.html
 BuildRequires:	sed >= 4.0
+BuildRequires:	unzip
 Requires:	cacti >= 0.8.6j
 Requires:	cacti-add_template
 Obsoletes:	cacti-plugin-squidstats
