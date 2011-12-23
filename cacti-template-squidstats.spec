@@ -2,7 +2,7 @@
 Summary:	Squid Statistics template for Cacti
 Name:		cacti-template-%{template}
 Version:	0.1
-Release:	2
+Release:	3
 License:	GPL v2
 Group:		Applications/WWW
 Source0:	SquidStats-%{version}.zip
